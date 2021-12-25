@@ -1,0 +1,49 @@
+[
+	{
+		"company": "SovTech Pty (Ltd)",
+		"date": "July 2020 - Present",
+		"role": "Fullstack Software Developer",
+		"companyDescription": "Worked on multiple projects taking on the role of Fullstack Developer",
+		"projects": [
+			{
+				"name": "Palian Pty (Ltd)",
+				"description": "Worked with React, Typescript, GraphQL, Apollo, Strapi Headless CMS\nMainly responsible for developing and delivering full features as per client requirements\nHad day-to-day scrum meetings with client as part of agile development.",
+				"stack": ["react", "strapi cms", "graphql", "typscript"]
+			},
+			{
+				"name": "Sebata Utility App",
+				"description": "Built with StrapiJS, Microsoft Azure, React Native, Typescript, Graphql\nDesigned and Implemented key APIs to be consumed with a web app and a react native app\nTested key features using Jest and React Testing Library",
+				"stack": ["typscript", "strapi cms", "react", "react-native", "azure"]
+			},
+			{
+				"name": "Futr.ai",
+				"description": "Built with StrapiJS, Microsoft Azure, React Native, Typescript, Graphql\nDesigned and Implemented key APIs to be consumed with a web app and a react native app\nTested key features using Jest and React Testing Library",
+				"stack": ["typscript", "strapi cms", "react", "react-native", "azure"]
+			}
+		]
+	},
+	{
+		"company": "Duppla Pty (Ltd) ",
+		"date": "March 2017 - June 2020",
+		"role": "Co-Founder and Web Developer",
+		"companyDescription": "Worked on multiple projects taking on the role of Fullstack Developer",
+		"projects": [
+			{
+				"name": "BNR-Media Pty (Ltd)",
+				"description": "Website design and development"
+			},
+			{
+				"name": "Readira Systems Pty(Ltd)",
+				"description": "brand identity design, web design, web development"
+			},
+			{
+				"name": "UCT-Globalist Magazine",
+				"description": "Website design"
+			},
+			{
+				"name": "Malewatle Electrical Wiring and Constuction Pty(Ltd)",
+				"description": "brand identity design"
+			}
+		]
+	}
+]
