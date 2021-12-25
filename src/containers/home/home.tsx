@@ -3,8 +3,9 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react"
+import { FunctionComponent } from "react"
 
-export const Home = (): JSX.Element => {
+export const Home: FunctionComponent = () => {
   return (
     <Grid
       h='200px'
