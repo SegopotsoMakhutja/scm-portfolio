@@ -1,22 +1,23 @@
-import { Flex, FlexProps } from '@chakra-ui/react'
+import { Box, FlexProps, GridProps } from '@chakra-ui/react'
 import { FunctionComponent } from 'react';
 import { Helmet } from 'react-helmet';
 import { Footer } from '../Footer';
 
-type PageWrapProps = FlexProps & {
-  title: string
+type PageWrapProps = FlexProps & GridProps& {
+  title: string;
+  showFooter?: boolean;
 }
 
-const PageWrap: FunctionComponent<PageWrapProps> = ({ children, title, ...rest }) => {
+const PageWrap: FunctionComponent<PageWrapProps> = ({ children, title, showFooter, ...rest }) => {
   return (
     <>
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Flex {...rest}>
+      <Box {...rest}>
         {children}
-        <Footer/>
-      </Flex>
+        {showFooter ? <Footer /> : null}
+      </Box>
     </>
   )
 }
