@@ -9,7 +9,7 @@ export const About: React.FC = () => {
   <PageWrap title="about" showFooter>
     <Header/>
     <Flex p='2rem' flexDir='column'>
-        <Box justifyContent='center' alignItems='center' height='70vw' overflowY='auto'>
+        <Box justifyContent='center' alignItems='center' maxHeight='75vh' overflowY='auto'>
         <Heading
           as='h1'
           size='2xl'
