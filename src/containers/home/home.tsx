@@ -33,7 +33,13 @@ export const Home: FunctionComponent = () => {
   ]
 
   return (
-    <PageWrap title="home" justify="center" align="center">
+    <PageWrap
+      title="home"
+      justifyContent="center"
+      alignItems="center"
+      display="flex"
+      showFooter
+    >
       <Header />
       <Box align="center">
         <Heading as="h1" size="2xl">

@@ -19,11 +19,15 @@ export const Header: FunctionComponent = (props) => {
       to: '/about',
       title: 'About'
     },
+    {
+      to: '/resume',
+      title: 'Resume'
+    },
   ]
 
   return (
     <Flex {...props}>
-      <ColorModeSwitcher justifyContent="flex-end" />
+      <ColorModeSwitcher justifyContent="center" />
       <HStack>
         {pages.map((page) => {
           return (
