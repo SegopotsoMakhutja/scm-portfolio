@@ -6,10 +6,10 @@ import PersonalDetails from '../../assets/PersonalDetails.json';
 export const About: React.FC = () => {
 
   return (
-  <PageWrap title="about" showFooter>
+  <PageWrap title="about">
     <Header/>
     <Flex p='2rem' flexDir='column'>
-        <Box justifyContent='center' alignItems='center' maxHeight='75vh' overflowY='auto'>
+        <Box justifyContent='center' alignItems='center' maxHeight='90vh' overflowY='auto' marginBottom='1rem'>
         <Heading
           as='h1'
           size='2xl'
