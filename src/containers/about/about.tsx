@@ -36,7 +36,7 @@ export const About: React.FC = () => {
           >
             {`${PersonalDetails.role}, ${PersonalDetails.location}`}
           </Heading>
-        <Box>
+        <Box marginBottom='4rem'>
           <Text paddingBottom='1rem'>
             {PersonalDetails.about}
           </Text>
