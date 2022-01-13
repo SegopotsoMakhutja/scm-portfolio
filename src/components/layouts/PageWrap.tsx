@@ -23,15 +23,15 @@ const PageWrap: FunctionComponent<PageWrapProps> = ({ children, title, showFoote
 }
 
 PageWrap.defaultProps = {
+  p: 4,
   pt: 'calc(64px + 1rem)',
+  height: '100vh',
   width: '100vw',
   mx: 'auto',
   flexDir: 'column',
   minHeight: '100vh',
   align: 'flex-start',
   justify: 'flex-start',
-  overflow: 'hidden',
-  position: 'fixed',
 }
 
 export default PageWrap
