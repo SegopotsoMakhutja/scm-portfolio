@@ -6,36 +6,30 @@ import PersonalDetails from '../../assets/PersonalDetails.json';
 export const About: React.FC = () => {
 
   return (
-  <PageWrap title="about">
+  <PageWrap title="about" overflow='hidden'>
     <Header/>
     <Flex p='2rem' flexDir='column'>
-        <Box justifyContent='center' alignItems='center' maxHeight='90vh' overflowY='auto' marginBottom='1rem'>
+      <Box justifyContent='center' alignItems='center' marginBottom='1rem' maxHeight={'90vh'} overflowY={'auto'}>
         <Heading
           as='h1'
           size='2xl'
           alignItems='center'
-          style={{
-            background: 'linear-gradient(to top, #da22ff, #9733ee)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            paddingBottom: '0.5rem',
-          }}
+          bgGradient="linear-gradient(to top, #da22ff, #9733ee)"
+          backgroundClip="text"
+          pb='0.5rem'
         >
           Segopotso Makhutja
         </Heading>
-          <Heading
-            as='h3'
-            size='l'
-            alignItems='center'
-            style={{
-              background: 'linear-gradient(to top, #da22ff, #9733ee)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              paddingBottom: '1.5rem',
-            }}
-          >
-            {`${PersonalDetails.role}, ${PersonalDetails.location}`}
-          </Heading>
+        <Heading
+          as='h3'
+          size='l'
+          alignItems='center'
+          bgGradient="linear(to-t, #da22ff, #9733ee)"
+          backgroundClip="text"
+          pb='1.5rem'
+        >
+          {`${PersonalDetails.role}, ${PersonalDetails.location}`}
+        </Heading>
         <Box marginBottom='4rem'>
           <Text paddingBottom='1rem'>
             {PersonalDetails.about}
