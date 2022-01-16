@@ -1,5 +1,5 @@
 import { ReactLocation } from "react-location"
-import { Home, About, Resume } from '../containers';
+import { Home, About, Resume, Blog } from '../containers';
 
 // create a location object
 export const location = new ReactLocation()
@@ -8,5 +8,6 @@ export const location = new ReactLocation()
 export const routes = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
-  { path: "/resume", element: <Resume /> }
+  { path: "/resume", element: <Resume /> },
+  { path: "Blog", element: <Blog /> },
 ]

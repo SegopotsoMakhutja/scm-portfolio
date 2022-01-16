@@ -20,6 +20,10 @@ export const Header: FunctionComponent = (props) => {
       title: 'About'
     },
     {
+      to: '/blog',
+      title: 'Blog'
+    },
+    {
       to: '/resume',
       title: 'Resume'
     },
