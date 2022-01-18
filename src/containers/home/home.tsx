@@ -1,9 +1,11 @@
 import { FunctionComponent } from "react"
-import { Heading, Text, IconButton, Box, HStack } from '@chakra-ui/react'
+import { Text, IconButton, Box, HStack } from '@chakra-ui/react'
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 
 import { Header, PageWrap } from '../../components';
 import { MY_NAME, LINKEDIN_URL, GITHUB_URL, INSTAGRAM_URL } from '../../constants'
+
+import { AnimatedGradientText } from './home.styles';
 
 
 export const Home: FunctionComponent = () => {
@@ -42,9 +44,9 @@ export const Home: FunctionComponent = () => {
     >
       <Header />
       <Box align="center">
-        <Heading as="h1" size="2xl">
+        <AnimatedGradientText size="2xl">
           {MY_NAME}
-        </Heading>
+        </AnimatedGradientText>
         <Text fontSize="2xl">
           Software Developer
         </Text>

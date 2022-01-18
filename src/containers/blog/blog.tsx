@@ -8,8 +8,8 @@ export const Blog = () => {
   return (
     <PageWrap title="blog" overflow='hidden'>
       <Header />
-      <Flex flexDir='column' overflowX={'hidden'} alignItems={'center'}>
-        <Box justifyContent='center' alignItems='center' marginBottom='1rem' maxHeight={'90vh'} overflowY={'auto'}>
+      <Flex flexDir='column' overflowX={'hidden'} alignItems={'center'} overflowY={'auto'}>
+        <Box justifyContent='center' alignItems='center' marginBottom='1rem' maxHeight={'90vh'}>
         {BlogPosts ? <Post posts={BlogPosts}/> : null}
         </Box>
       </Flex>
