@@ -29,13 +29,26 @@ export const Header: FunctionComponent = (props) => {
     },
   ]
 
+  const getActiveProps = () => {
+    return {
+      style: {
+        color: "#2193b0",
+        fontWeight: "bold",
+      },
+    };
+  }
+
   return (
     <Flex {...props}>
       <ColorModeSwitcher justifyContent="center" />
       <HStack>
         {pages.map((page) => {
           return (
-            <Link to={page.to}>
+            <Link
+              to={page.to}
+              getActiveProps={getActiveProps}
+              activeOptions={{ exact: true }}
+            >
               {page.title}
             </Link>
           )

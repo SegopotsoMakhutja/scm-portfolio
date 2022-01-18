@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react"
-import { Text, IconButton, Box, HStack } from '@chakra-ui/react'
+import { Text, IconButton, Box, HStack, useMediaQuery } from '@chakra-ui/react'
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 
 import { Header, PageWrap } from '../../components';
@@ -7,8 +7,9 @@ import { MY_NAME, LINKEDIN_URL, GITHUB_URL, INSTAGRAM_URL } from '../../constant
 
 import { AnimatedGradientText } from './home.styles';
 
-
 export const Home: FunctionComponent = () => {
+
+  const [isSmallerThan768] = useMediaQuery('(max-width: 768px)')
 
   type SocialItem = {
     icon: React.ReactElement
@@ -44,10 +45,10 @@ export const Home: FunctionComponent = () => {
     >
       <Header />
       <Box align="center">
-        <AnimatedGradientText size="2xl">
+        <AnimatedGradientText size={isSmallerThan768 ? "lg" : "2xl"}>
           {MY_NAME}
         </AnimatedGradientText>
-        <Text fontSize="2xl">
+        <Text fontSize={{ base: "lg", md: "2xl" }}>
           Software Developer
         </Text>
       </Box>
