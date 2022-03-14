@@ -23,10 +23,10 @@ export const Header: FunctionComponent = (props) => {
       to: '/blog',
       title: 'Blog'
     },
-    {
-      to: '/resume',
-      title: 'Resume'
-    },
+    // {
+    //   to: '/resume',
+    //   title: 'Resume'
+    // },
   ]
 
   const getActiveProps = () => {
